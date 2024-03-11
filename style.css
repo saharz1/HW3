@@ -1,0 +1,164 @@
+#create-visitor-form {
+    width: 50%; /* אורך הפורם */
+    margin: 0 auto; /* מרכז את הפורם באמצע הדף */
+    padding: 20px; /* מרווח פנימי בפורם */
+    border: 1px solid #ccc; /* מסגרת לפורם */
+    border-radius: 5px; /* פינות מעוגלות של המסגרת */
+  }
+  
+ 
+
+body {
+    margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    background-color: #fff;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+body {
+    background-color: #fff;
+  }
+  
+  #placeholder {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    gap: 15px;
+    flex-wrap: wrap;
+  }
+  
+  dialog {
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 20px;
+  }
+
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    display: inline-block;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s;
+  }
+  
+  .card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* שמירה על יחסי תמונה */
+    border-radius: 5px;
+  }  
+  
+  .card-body {
+    text-align: center;
+  }
+  
+  .form-control {
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .all-visitors-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  section {
+    background-color: #333;
+    color:#fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  h1 {
+    margin: 0;
+    font-size: 24px;
+  }
+
+  .navList {
+    list-style-type: none;
+    align-items:center;
+    justify-content:baseline;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+    background-color:#fff;
+  }
+  .navList a{
+    font-size: 1em;
+    padding: 0 2rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: black;
+    margin-left: 40px;
+  }
+  .navList a:hover{
+    text-shadow: 3px 3px 20px,-2px 1px 30px;
+  }
+
+  .search-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+  }
+
+  /* Modal */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  #error-message {
+    color: red;
+  }
+  
